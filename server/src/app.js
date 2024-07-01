@@ -2,6 +2,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import express from 'express';
+import morgan from 'morgan';
 import cors from 'cors';
 
 import planetsRouter from './routes/planets/planets.router.js';
@@ -14,6 +15,7 @@ app.use(
 	})
 );
 
+app.use(morgan('combined'));
 app.use(express.json());
 
 const __filename = fileURLToPath(import.meta.url);
