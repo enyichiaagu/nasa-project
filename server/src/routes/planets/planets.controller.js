@@ -1,7 +1,7 @@
-import { planets } from '../../models/planets.model.js';
+import { getAllPlanets } from '../../models/planets.model.js';
 
-function getAllPlanets(req, res) {
-	return res.status(200).json(planets);
+function httpGetAllPlanets(req, res) {
+	return res.status(200).json(getAllPlanets());
 }
 
-export { getAllPlanets };
+export { httpGetAllPlanets };
