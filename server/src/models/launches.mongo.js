@@ -7,7 +7,7 @@ const launchesSchema = new Schema({
   rocket: { type: String, required: true },
   target: { type: String, required: true },
   customers: [String],
-  upcoming: { type: String, required: true },
+  upcoming: { type: Boolean, required: true, default: true },
   success: { type: Boolean, required: true, default: true },
 });
 
