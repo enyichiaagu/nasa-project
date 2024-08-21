@@ -5,7 +5,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "test": "vitest",
+    "test": "vitest --globals",
     "start": "node src/server.js",
     "dev": "node --watch src/server.js",
     "cluster": "pm2 start src/server.js -i max"
