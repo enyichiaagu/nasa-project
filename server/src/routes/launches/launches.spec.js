@@ -14,7 +14,7 @@ describe('Test POST /launches', async () => {
   const launchData = {
     mission: 'USS Enterprise',
     rocket: 'NCC 1701-D',
-    target: 'Kepler-186 f',
+    target: 'Kepler-442 b',
   };
   const invalidDateData = { ...launchData, launchDate: 'hello' };
   const completeLaunchData = { ...launchData, launchDate: 'January 4, 2028' };
