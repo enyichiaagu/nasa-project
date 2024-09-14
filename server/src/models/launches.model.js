@@ -57,7 +57,7 @@ async function populateLaunches() {
       customers,
     };
 
-    console.log(`${launch.rocket}`);
+    console.log(`${launch.flightNumber} ${launch.mission}`);
 
     await saveLaunch(launch);
   }
